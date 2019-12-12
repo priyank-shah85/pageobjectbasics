@@ -14,6 +14,7 @@ public class LoginTest extends BaseTest{
 	@Test(dataProviderClass = Utilities.class, dataProvider = "dp")
 	public void loginTest(Hashtable <String, String> data) {
 	
+		//Using EGit plugin
 		HomePage home = new HomePage();
 		LoginPage lp = home.goToLogin();
 		lp.doLogin(data.get("username"), data.get("password"));
