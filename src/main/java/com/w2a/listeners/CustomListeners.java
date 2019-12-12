@@ -37,6 +37,11 @@ public class CustomListeners extends Page implements ITestListener, ISuiteListen
 	}
 
 	public void onFinish(ISuite suite) {
+		
+		if (extent != null) {
+
+			extent.flush();
+		}
 		/*
 		 * System.out.println("In Finish"); MonitoringMail mail = new MonitoringMail();
 		 * System.out.println("In Finish2");

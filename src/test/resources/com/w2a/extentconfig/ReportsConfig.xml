@@ -20,7 +20,7 @@
         <reportName>Automation Report for</reportName>
         
         <!-- report headline - displayed at top-nav, after reportHeadline -->
-        <reportHeadline>Data Driven Framework Project</reportHeadline>
+        <reportHeadline>Page Object Model Basics Project</reportHeadline>
         
         <!-- global date format override -->
         <!-- defaults to yyyy-MM-dd -->
