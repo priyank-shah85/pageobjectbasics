@@ -71,12 +71,14 @@ public class CustomListeners extends Page implements ITestListener, ISuiteListen
 	private static ExtentReports extent = ExtentManager
 			.createInstance(System.getProperty("user.dir") + "\\reports\\" + fileName);
 	public static ThreadLocal<ExtentTest> testReport = new ThreadLocal<ExtentTest>();
+	
+	
 
 	public void onTestStart(ITestResult result) {
 		ExtentTest test = extent
 				.createTest(result.getTestClass().getName() + "     @TestCase : " + result.getMethod().getMethodName());
 		testReport.set(test);
-
+		System.out.println("In Finish2");
 		// runmodes - Y
 		if (!Utilities.isTestRunnable(result.getName(), excel)) {
 
